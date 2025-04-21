@@ -3,9 +3,8 @@
  * https://jestjs.io/docs/configuration
  */
 
-import type {Config} from 'jest';
-
-const config: Config = {
+/** @type {import('jest').Config} */
+const config = {
   // All imported modules in your tests should be mocked automatically
   // automock: false,
 
@@ -104,8 +103,7 @@ const config: Config = {
   // A preset that is used as a base for Jest's configuration
   // preset: undefined,
 
-  // Run tes
-  //  from one or more projects
+  // Run tests from one or more projects
   // projects: undefined,
 
   // Use this configuration option to add custom reporters to Jest
@@ -197,4 +195,4 @@ const config: Config = {
   // watchman: true,
 };
 
-export default config;
+module.exports = config;
