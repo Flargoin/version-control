@@ -13,7 +13,7 @@ export const multySeven = () => {
 }
 
 /* Task3 */
-export function averageOdd(n) {
+export const averageOdd = (n) => {
     if (typeof n !== 'number' || n < 1) {
       throw new Error('N должно быть числом больше или равно 1');
     }
@@ -29,7 +29,7 @@ export function averageOdd(n) {
     return count === 0 ? 0 : sum / count;
 }
 
-export function run() {
+export const run = () => {
     const input = prompt('Введите число N:');
     let n = input;
     if (isNaN(+n) || +n < 1) {

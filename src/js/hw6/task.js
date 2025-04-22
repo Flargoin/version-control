@@ -1,8 +1,8 @@
-export function diff(a, b) {
+export const diff = (a, b) => {
 return Math.abs(a - b);
 }
 
-export function isWord(str) {
+export const isWord = (str) => {
     if (typeof str !== 'string') {
         return false;
     }
@@ -13,6 +13,6 @@ export function isWord(str) {
     return !/\s/.test(trimmed);
 }
 
-export function pow(a, x) {
+export const pow = (a, x) => {
     return Math.pow(a, x);
 }
