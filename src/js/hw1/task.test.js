@@ -65,7 +65,7 @@ describe('Проверка 3-го задания', () => {
         expect(() => sumNums("")).toThrow("Не проходит по условию задачи!");
     })
 
-    test('Символы вместо цифр', () => {
+    it('Символы вместо цифр', () => {
         global.prompt = jest.fn().mockReturnValueOnce('1a2b');
         expect(() => sumNums("")).toThrow("Не проходит по условию задачи!");
     });

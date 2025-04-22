@@ -58,24 +58,24 @@ describe("Проверка 2 задания", () => {
 })
 
 describe('Проверка 3 задания', () => {
-    test('Круг помещается в квадрат', () => {
+    it('Круг помещается в квадрат', () => {
       expect(areaCalc(78.5398, 100)).toBe(true);
       expect(areaCalc(12.5664, 16)).toBe(true);
       expect(areaCalc(50.2655, 64)).toBe(true);
     });
   
-    test('Круг НЕ помещается в квадрат', () => {
+    it('Круг НЕ помещается в квадрат', () => {
       expect(areaCalc(50, 49)).toBe(false);
       expect(areaCalc(314.159, 100)).toBe(false);
     });
   
-    test('Пограничные значения', () => {
+    it('Пограничные значения', () => {
       expect(areaCalc(0, 0)).toBe(true);
       expect(areaCalc(25, 25)).toBe(false);
       expect(areaCalc(78.5398, 100)).toBe(true);
     });
   
-    test('Обработка некорректных данных', () => {
+    it('Обработка некорректных данных', () => {
       expect(() => areaCalc(-10, 100)).toThrow(RangeError);
       expect(() => areaCalc(50, -5)).toThrow(RangeError);
       expect(() => areaCalc("abc", 100)).toThrow(TypeError);
